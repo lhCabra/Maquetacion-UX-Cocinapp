@@ -1,0 +1,19 @@
+<!-- drawable/extended_fa.xml -->
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="169dp"
+    android:height="56dp"
+    android:viewportWidth="169"
+    android:viewportHeight="56"
+    >
+    <group>
+        <clip-path
+            android:pathData="M16 0H153C161.837 0 169 7.16344 169 16V40C169 48.8366 161.837 56 153 56H16C7.16344 56 0 48.8366 0 40V16C0 7.16344 7.16344 0 16 0Z"
+            />
+        <path
+            android:pathData="M0 0V56H169V0"
+            android:fillColor="#ED7D43"
+            />
+    </group>
+</vector>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#ED7D43</color>
+    <color name="secondary">#FFA56A</color>
+    <color name="table_headers">#FFCFAF</color>
+    <color name="table_rows">#FFF4EB</color>
+    <color name="background">#FFF9F7</color>
+</resources>
