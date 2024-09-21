@@ -55,4 +55,12 @@
     <string name="freir_salchichas">Freir salchichas</string>
     <string name="_20min">20min</string>
     <string name="compartir_receta">Compartir receta</string>
+    <string name="a_cocinar">¡A cocinar!</string>
+    <string name="inicia_la_primera_alarma_al_hacer_clic_en_iniciar_te_avisaremos_cuando_sea_el_momento_del_siguiente_paso">Inicia la primera alarma al hacer clic en \'Iniciar\'. Te avisaremos cuando sea el momento del siguiente paso.</string>
+    <string name="pausa_cuando_lo_necesites_con_el_bot_n_pausar_y_retoma_dando_clic_en_reanudar">Pausa cuando lo necesites con el botón \'Pausar\', y retoma dando clic en \'Reanudar\'.</string>
+    <string name="para_avanzar_simplemente_da_clic_en_continuar_y_activaremos_la_siguiente_alarma">Para avanzar, simplemente da clic en \'Continuar\' y activaremos la siguiente alarma.</string>
+    <string name="repite_hasta_llegar_al_final_de_la_receta_nosotros_te_acompa_amos_en_cada_paso">Repite hasta llegar al final de la receta. ¡Nosotros te acompañamos en cada paso!</string>
+    <string name="iniciar">Iniciar</string>
+    <string name="back">back</string>
+    <string name="instruction">instruction</string>
 </resources>

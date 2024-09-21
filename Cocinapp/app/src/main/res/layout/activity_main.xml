@@ -56,7 +56,276 @@
 
     </com.google.android.material.appbar.AppBarLayout>
 
-    <include layout="@layout/content_main" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_height="match_parent"
+        android:backgroundTint="@color/background"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:id="@+id/button_back"
+            android:layout_width="90dp"
+            android:layout_height="39dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/title_header"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.019"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/icon_back"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="0dp"
+                android:src="@drawable/ic_arrow_back"
+                android:contentDescription="@string/back" />
+
+            <TextView
+                android:id="@+id/text_volver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/icon_back"
+                android:text="@string/Volver"
+                android:textColor="#E76F51" />
+
+        </RelativeLayout>
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="368dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="21dp"
+            android:textColor="#000000"
+            android:text="@string/salchipapas"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button_back" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="361dp"
+            android:layout_height="178dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="21dp"
+            android:text="@string/descripcion"
+            android:textAlignment="inherit"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="376dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="21dp"
+            android:text="@string/creado_por_rausch"
+            android:textAlignment="textEnd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <RelativeLayout
+            android:id="@+id/title_header"
+            android:layout_width="412dp"
+            android:layout_marginTop="25pt"
+            android:layout_height="48dp"
+            android:background="#FFCFAF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6">
+
+            <TextView
+                android:id="@+id/Alarmas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:textSize="24sp"
+                android:textColor="#000000"
+                android:text="@string/alarmas" />
+
+            <ImageView
+                android:id="@+id/icon_add"
+                android:layout_width="31dp"
+                android:layout_height="31dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="0dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/add"
+                android:contentDescription="add" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contentTable1"
+            android:layout_width="412dp"
+            android:layout_height="48dp"
+            android:background="#FFF4EB"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_header">    <TextView
+            android:id="@+id/alarma1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:textSize="16sp"
+            android:text="@string/freir_papas" />
+
+            <TextView
+                android:id="@+id/detalle_alarma1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="21dp"
+                android:layout_toStartOf="@+id/icon_alarma1"
+                android:text="@string/_30min"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/icon_alarma1"
+                android:layout_width="24dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="0dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/order_arrows"
+                android:contentDescription="order" /></RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contentTable2"
+            android:layout_width="412dp"
+            android:layout_height="48dp"
+            android:background="#FFF4EB"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contentTable1"> <TextView
+            android:id="@+id/alarma2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:textSize="16sp"
+            android:text="@string/freir_salchichas" />
+
+            <TextView
+                android:id="@+id/detalle_alarma2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="21dp"
+                android:layout_toStartOf="@+id/icon_alarma2"
+                android:text="@string/_20min"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/icon_alarma2"
+                android:layout_width="24dp"
+                android:layout_height="28dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="0dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/order_arrows"
+                android:contentDescription="order2" /></RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/extended_fa"
+            android:layout_width="169dp"
+            android:layout_height="56dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/extended_fa"
+            android:clipToOutline="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/contentTable2"
+            app:layout_constraintVertical_bias="0.814">
+
+            <ImageView
+                android:id="@+id/icon_share"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:src="@drawable/share"
+                android:contentDescription="share" />
+
+            <TextView
+                android:id="@+id/share_receipt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="17dp"
+                android:layout_toEndOf="@+id/icon_share"
+                android:text="@string/compartir_receta"
+                android:textAlignment="center"
+                android:textColor="@color/background"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/button_play"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="40dp"
+            android:layout_marginEnd="5dp"
+            android:backgroundTint="@color/background"
+            app:cardCornerRadius="39dp"
+            app:cardElevation="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.76"
+            app:layout_constraintStart_toEndOf="@+id/extended_fa">
+
+
+            <ImageView
+                android:id="@+id/icon_play"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icon_play"
+                tools:layout_editor_absoluteX="305dp"
+                tools:layout_editor_absoluteY="692dp"
+                android:contentDescription="play" />
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 

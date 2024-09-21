@@ -6,7 +6,6 @@ plugins {
 android {
     namespace = "com.example.cocinapp"
     compileSdk = 34
-
     defaultConfig {
         applicationId = "com.example.cocinapp"
         minSdk = 24
