@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Cocinapp"
         tools:targetApi="31">
         <activity
+            android:name=".StartRecipeActivity"
+            android:exported="false" />
+        <activity
             android:name=".InstructionsActivity"
             android:exported="false"
             android:theme="@style/Theme.Cocinapp" />

@@ -1,0 +1,24 @@
+<!-- drawable/extended_fa.xml -->
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="152dp"
+    android:height="58dp"
+    android:viewportWidth="152"
+    android:viewportHeight="58"
+    >
+    <group>
+        <clip-path
+            android:pathData="M17 1H135C143.837 1 151 8.16344 151 17V41C151 49.8366 143.837 57 135 57H17C8.16344 57 1 49.8366 1 41V17C1 8.16344 8.16344 1 17 1Z"
+            />
+        <path
+            android:pathData="M1 1V57H151V1"
+            android:fillColor="#FFF4EB"
+            />
+    </group>
+    <path
+        android:pathData="M17 1H135C143.837 1 151 8.16344 151 17V41C151 49.8366 143.837 57 135 57H17C8.16344 57 1 49.8366 1 41V17C1 8.16344 8.16344 1 17 1Z"
+        android:strokeWidth="2"
+        android:strokeColor="#ED7D43"
+        />
+</vector>

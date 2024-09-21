@@ -63,4 +63,6 @@
     <string name="iniciar">Iniciar</string>
     <string name="back">back</string>
     <string name="instruction">instruction</string>
+    <string name="_1_2">1/2</string>
+    <string name="_00_25_00">00:25:00</string>
 </resources>

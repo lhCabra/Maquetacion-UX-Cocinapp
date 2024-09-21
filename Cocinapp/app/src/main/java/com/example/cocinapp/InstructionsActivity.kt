@@ -19,12 +19,16 @@ class InstructionsActivity : AppCompatActivity() {
 
         binding = ActivityInstructionsBinding.inflate(layoutInflater)
         setContentView(R.layout.activity_instructions)
-        val play=findViewById<RelativeLayout>(R.id.button_back)
-        play.setOnClickListener {
+        val back=findViewById<RelativeLayout>(R.id.button_back)
+        back.setOnClickListener {
             val intent=Intent(this,MainActivity::class.java)
             startActivity(intent)
         }
-
+        val play=findViewById<RelativeLayout>(R.id.start)
+        play.setOnClickListener {
+            val intent=Intent(this,StartRecipeActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onSupportNavigateUp(): Boolean {
