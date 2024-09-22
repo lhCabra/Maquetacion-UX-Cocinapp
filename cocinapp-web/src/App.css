@@ -239,3 +239,121 @@ input{
   margin:30px;
   font-size: 24px;  color:#784429 ;
 }
+.card-chart{
+width: 40%;
+  background-color: #EDE7E2;
+  padding: 70px;
+  padding-top: 30px;
+  padding-left: 30px!important;
+  padding-bottom: 150px;
+  border-radius: 5px;
+  height: 550px;
+  text-align: start;
+  color: #784429;
+  flex: 1;                        
+  margin: 0 40px;               
+  max-width: calc(50% - 60px);  
+}
+.chart-title{
+  font-weight: medium;
+
+  display: block;              
+  margin-bottom: 10px;     
+}
+
+canvas{
+  height: 450px!important;
+  width: 105%!important;
+  margin-top: 20px;
+}
+.row-charts {
+  display: flex;                  
+  justify-content: space-between; 
+}
+
+
+.dashboard-item{
+  background-color: #FFA56A;
+  max-width: 340px !important;
+  height: 80px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EDE7E2;
+}
+.dashboard .row {
+  display: flex;                
+  justify-content: space-between;
+  margin:60px;
+  margin-left:40px; 
+  margin-right:40px;
+  margin-top: 0px;
+}
+.filter{
+  width: 250px;
+  background-color: #EDE7E2;
+  height: 50px;
+  text-align: start;
+  color: #784429;
+  display: flex;
+  align-items: center;  
+  align-content: center;  
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  justify-content: space-between;
+  padding-right: 0;
+}
+.row-filter{
+  display: flex;
+  align-items: center;
+  height: 120px;
+  justify-content: end;
+  margin-right: 40px;
+}
+
+
+.filter-content .dropdown-menu.show{
+  position: absolute;
+  top: 195px;
+  right: 40px;
+  background-color: #EDE7E2;
+  border-radius: 5px; 
+  width: 250px;
+  border: none;
+  text-align: center;
+  padding:  0;
+}
+
+.filter-content .menu-item {
+  padding: 15px;
+  font-size: 20px;
+  color: #784429;
+}
+
+.filter-content .menu-divider {
+  height: 1px;
+  background-color: #000;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.filter-content .menu-item:hover {
+  background-color: #D8D3CF;
+  cursor: pointer;
+
+}
+.filter-content .menu-item:hover#first {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.filter-content .menu-item:hover#last {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#dropdown-icon{
+  height: 50px;
+}
