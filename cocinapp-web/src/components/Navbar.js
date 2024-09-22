@@ -26,7 +26,8 @@ function Navbar({ title }) {
                     &#9776;
                 </div>
             </div> <div className={`dropdown-menu ${menuOpen ? 'show' : 'hide'}`}>
-                    <div className="menu-item" id='first' onClick={() => handleMenuClick('/estadisticas')}>Estadísticas</div>
+                   {title!=="Estadísticas" &&<div className="menu-item" id='first' onClick={() => handleMenuClick('/estadisticas')}>Estadísticas</div>}
+                   {title==="Estadísticas" &&<div className="menu-item" id='first' onClick={() => handleMenuClick('/mis-recetas')}>Mis recetas</div>}
                     <div className="menu-divider"></div>
                     <div className="menu-item" onClick={() => handleMenuClick('/perfil')}>Mi perfil</div>
                     <div className="menu-divider"></div>

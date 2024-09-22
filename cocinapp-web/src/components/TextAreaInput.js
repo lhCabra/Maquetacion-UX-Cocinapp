@@ -8,7 +8,8 @@ const TextAreaInput = ({ label, placeholder }) => {
       <textarea
         placeholder={placeholder}
         className="input-field form-control custom-textarea"
-        rows="13" 
+        rows="12" 
+        style={{ fontSize: '20px' }}
       />
     </div>
   );

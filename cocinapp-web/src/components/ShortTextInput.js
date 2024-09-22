@@ -12,6 +12,7 @@ const ShortTextInput = ({ label, placeholder, value, onChange}) => {
         value={value}
         onChange={onChange}
         className="input-field form-control custom-textarea"
+        style={{ fontSize: '20px' }}
       />
     </div>
   );
