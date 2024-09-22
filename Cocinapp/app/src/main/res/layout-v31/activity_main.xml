@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
+    android:background="@color/background"
     tools:context=".MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -60,7 +61,7 @@
         android:layout_width="match_parent"
         android:layout_marginTop="16dp"
         android:layout_height="match_parent"
-        android:backgroundTint="@color/background"
+        android:background="@color/background"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <RelativeLayout
@@ -175,7 +176,7 @@
                 android:layout_marginStart="0dp"
                 android:layout_alignParentEnd="true"
                 android:src="@drawable/add"
-                android:contentDescription="add" />
+                android:contentDescription="@string/add" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -212,7 +213,7 @@
                 android:layout_marginStart="0dp"
                 android:layout_alignParentEnd="true"
                 android:src="@drawable/order_arrows"
-                android:contentDescription="order" /></RelativeLayout>
+                android:contentDescription="@string/order" /></RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/contentTable2"
@@ -248,7 +249,7 @@
                 android:layout_marginStart="0dp"
                 android:layout_alignParentEnd="true"
                 android:src="@drawable/order_arrows"
-                android:contentDescription="order2" /></RelativeLayout>
+                android:contentDescription="@string/order2" /></RelativeLayout>
 
 
         <RelativeLayout
@@ -275,7 +276,8 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="16dp"
-                android:src="@drawable/share" />
+                android:src="@drawable/share"
+                android:contentDescription="@string/share" />
 
             <TextView
                 android:id="@+id/share_receipt"
@@ -319,7 +321,8 @@
                 android:scaleType="fitCenter"
                 android:src="@drawable/icon_play"
                 tools:layout_editor_absoluteX="305dp"
-                tools:layout_editor_absoluteY="692dp" />
+                tools:layout_editor_absoluteY="692dp"
+                android:contentDescription="@string/play" />
         </androidx.cardview.widget.CardView>
 
 

@@ -1,12 +1,14 @@
 package com.example.cocinapp
 
 import android.content.Intent
+import android.content.res.ColorStateList
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.ui.AppBarConfiguration
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.ImageView
 import androidx.cardview.widget.CardView
+import androidx.core.content.ContextCompat
 import com.example.cocinapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -19,8 +21,11 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val play=findViewById<CardView>(R.id.button_play)
+        val icon=findViewById<ImageView>(R.id.icon_play)
         play.setOnClickListener {
             val intent=Intent(this,InstructionsActivity::class.java)
+            icon.setImageResource(R.drawable.play_clicked)
+            play.backgroundTintList = ColorStateList.valueOf(ContextCompat.getColor(this,R.color.primary))
             startActivity(intent)
         }
     }

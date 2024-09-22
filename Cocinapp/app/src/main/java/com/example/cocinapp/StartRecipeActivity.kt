@@ -1,20 +1,19 @@
 package com.example.cocinapp
 
 import android.content.Intent
+import android.content.res.ColorStateList
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.view.View
 import android.widget.ImageView
 import android.widget.RelativeLayout
 import android.widget.TextView
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import androidx.core.view.marginLeft
+import androidx.core.content.ContextCompat
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
-import com.example.cocinapp.databinding.ActivityInstructionsBinding
 import com.example.cocinapp.databinding.ActivityStartRecipeBinding
 
 class StartRecipeActivity : AppCompatActivity() {
@@ -27,8 +26,13 @@ class StartRecipeActivity : AppCompatActivity() {
 
         binding = ActivityStartRecipeBinding.inflate(layoutInflater)
         setContentView(R.layout.activity_start_recipe)
-        val play=findViewById<RelativeLayout>(R.id.button_back)
-        play.setOnClickListener {
+        val back=findViewById<RelativeLayout>(R.id.button_back)
+        val textBack=findViewById<TextView>(R.id.text_volver)
+        val iconBack=findViewById<ImageView>(R.id.icon_back)
+        back.setOnClickListener {
+            back.backgroundTintList = ColorStateList.valueOf(ContextCompat.getColor(this,R.color.primary))
+            textBack.setTextColor(ContextCompat.getColor(this, R.color.table_rows))
+            iconBack.setBackgroundResource(R.drawable.icon_back_clicked)
             val intent= Intent(this,MainActivity::class.java)
             startActivity(intent)
         }
@@ -42,29 +46,55 @@ class StartRecipeActivity : AppCompatActivity() {
         val continueButton = findViewById<RelativeLayout>(R.id.continue_button)
 
         pauseButton.setOnClickListener {
-            if( textView.visibility != View.VISIBLE) {
-                textView.visibility = View.VISIBLE
-                pauseText.text = "Reanudar"
-                iconPause.setImageResource(R.drawable.play_arrow_button)
-            }
-            else{
-                textView.visibility = View.INVISIBLE
-                pauseText.text = "Pausar"
-                iconPause.setImageResource(R.drawable.pause)
+            pauseButton.setBackgroundResource(R.drawable.extended_fa)
+            pauseText.setTextColor(ContextCompat.getColor(this, R.color.table_rows))
+
+            val handler = Handler(Looper.getMainLooper())
+
+            if (textView.visibility != View.VISIBLE) {
+                iconPause.setImageResource(R.drawable.pause_clicked)
+
+                handler.postDelayed({
+                   pauseButton.setBackgroundResource(R.drawable.pausebkground)
+                    pauseText.setTextColor(ContextCompat.getColor(this, R.color.primary))
+
+                    textView.visibility = View.VISIBLE
+                    pauseText.text = getString(R.string.reanudar)
+                    iconPause.setImageResource(R.drawable.play_arrow_button)
+                }, 120)
+
+            } else {
+                iconPause.setImageResource(R.drawable.play_clicked_recipe)
+
+                handler.postDelayed({
+                   pauseButton.setBackgroundResource(R.drawable.pausebkground)
+                    pauseText.setTextColor(ContextCompat.getColor(this, R.color.primary))
+
+                    textView.visibility = View.INVISIBLE
+                    pauseText.text = getString(R.string.pausar)
+                    iconPause.setImageResource(R.drawable.pause)
+                }, 120)
             }
         }
+
         continueButton.setOnClickListener {
             continueClickCount++
             textView.visibility = View.INVISIBLE
+            continueButton.setBackgroundResource(R.drawable.start_clicked)
 
-            if (continueClickCount == 1) {
-                alarmText.text = "Freir salchichas"
-                alarmNumber.text = "2/2"
-                timerText.text = "00:18:00"
-            } else if (continueClickCount == 2) {
-                val intent=Intent(this,InstructionsActivity::class.java)
-                startActivity(intent)
-            }
+            val handler = Handler(Looper.getMainLooper())
+
+            handler.postDelayed({
+                if (continueClickCount == 1) {
+                    alarmText.text = getString(R.string.freir_salchichas)
+                    alarmNumber.text = "2/2"
+                    timerText.text = getString(R.string._00_18_00)
+                    continueButton.setBackgroundResource(R.drawable.extended_fa)
+                } else if (continueClickCount == 2) {
+                    val intent = Intent(this, MainActivity::class.java)
+                    startActivity(intent)
+                }
+            }, 120)
         }
     }
 
