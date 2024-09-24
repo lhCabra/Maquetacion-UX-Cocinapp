@@ -1,19 +1,19 @@
-// src/components/BarChart.js
 import React from 'react';
+import '../App.css';
 import { Bar } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
 
 // Register the required components
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
-const BarChart = ({ data , maxValue}) => {
+const BarChart = ({ data, maxValue }) => {
     const chartData = {
         labels: data.labels,
         datasets: [
             {
                 data: data.values,
-                backgroundColor: '#ED7D43', // Set solid color for bars
-                borderColor: '#ED7D43', // Same color for border
+                backgroundColor: '#ED7D43',
+                borderColor: '#ED7D43',
                 borderWidth: 1,
                 borderRadius: 4,
             },
@@ -22,11 +22,10 @@ const BarChart = ({ data , maxValue}) => {
 
     const options = {
         responsive: true,
+        maintainAspectRatio: false,
         plugins: {
-
             legend: {
                 display: false,
-
             },
             title: {
                 display: false,
@@ -55,7 +54,11 @@ const BarChart = ({ data , maxValue}) => {
         },
     };
 
-    return <Bar data={chartData} options={options} />;
+    return (
+        <div className="chart-container"> 
+            <Bar data={chartData} options={options} />
+        </div>
+    );
 };
 
 export default BarChart;

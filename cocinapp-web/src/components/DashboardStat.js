@@ -2,21 +2,25 @@ import React from 'react';
 
 const DashboardStat = ({ title, description }) => {
   const containerStyle = {
-    display: 'flex',
-    alignItems: 'center', 
-    height: '90px',    
-    color:'#784429',    
-    paddingLeft:'30px', 
+    display: 'grid',
+    gridTemplateColumns: '4fr 8fr', // Title takes 4 columns, description takes 8 columns
+    alignItems: 'center',
+    height: '9.05vh',
+    width: '20.84vw', 
+    color: '#784429',
+    paddingLeft: '15px',
   };
 
   const titleStyle = {
-    fontWeight: 'bold',      
-    fontSize: '40px',        
-    marginRight: '20px',     
+    textAlign: 'right',
+    marginRight:'20px',
+    fontWeight: 'bold',
+    fontSize: '40px',
   };
 
   const descriptionStyle = {
-    fontSize: '20px',    
+    fontSize: '20px',
+    fontWeight: '500',
   };
 
   return (

@@ -23,7 +23,7 @@ function Recipes() {
         <div className="col-md-6 text-center">
           <div className="d-flex justify-content-between mt-5">
             <button
-              className="button btn-primary flex-fill me-5"
+              className="button btn-primary flex-fill me-4"
               onClick={() => handleMenuClick('/crear-receta')}
             >
               Crear

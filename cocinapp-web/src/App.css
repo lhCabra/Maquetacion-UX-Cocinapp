@@ -240,30 +240,36 @@ input{
   font-size: 24px;  color:#784429 ;
 }
 .card-chart{
-width: 40%;
+width: 45.833334vw;
   background-color: #EDE7E2;
   padding: 70px;
   padding-top: 30px;
-  padding-left: 30px!important;
+  padding-left: 50px!important;
   padding-bottom: 150px;
   border-radius: 5px;
-  height: 550px;
+  height: 60.301vh;
   text-align: start;
   color: #784429;
   flex: 1;                        
-  margin: 0 40px;               
+  margin: 0 30px;            
+  margin-bottom: 30px;   
   max-width: calc(50% - 60px);  
 }
+.chart-container{
+  height: 50.251vh;
+  width: 39vw;
+}
 .chart-title{
-  font-weight: medium;
+  font-weight: 500;
 
   display: block;              
   margin-bottom: 10px;     
 }
 
 canvas{
-  height: 450px!important;
-  width: 105%!important;
+  height: 50.251vh!important;
+  width: 39vw!important;
+
   margin-top: 20px;
 }
 .row-charts {
@@ -285,9 +291,9 @@ canvas{
 .dashboard .row {
   display: flex;                
   justify-content: space-between;
-  margin:60px;
-  margin-left:40px; 
-  margin-right:40px;
+  margin:40px;
+  margin-left:30px; 
+  margin-right:30px;
   margin-top: 0px;
 }
 .filter{
@@ -311,7 +317,7 @@ canvas{
   align-items: center;
   height: 120px;
   justify-content: end;
-  margin-right: 40px;
+  margin-right: 30px;
 }
 
 
