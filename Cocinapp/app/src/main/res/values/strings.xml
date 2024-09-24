@@ -65,4 +65,12 @@
     <string name="instruction">instruction</string>
     <string name="_1_2">1/2</string>
     <string name="_00_25_00">00:25:00</string>
+    <string name="reanudar">Reanudar</string>
+    <string name="pausar">Pausar</string>
+    <string name="_00_18_00">00:18:00</string>
+    <string name="add">add</string>
+    <string name="order">order</string>
+    <string name="order2">order2</string>
+    <string name="share">share</string>
+    <string name="play">play</string>
 </resources>
