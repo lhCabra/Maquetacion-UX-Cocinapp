@@ -37,3 +37,15 @@ Se recomienda utilizar el dispositivo emulado **Pixel 7 API TiramisuPrivacySandb
 1. Selecciona el dispositivo emulado o conecta un dispositivo físico.
 2. Haz clic en el botón **Run** para compilar y ejecutar la aplicación en el dispositivo seleccionado.
 
+## Evidencias
+https://youtube.com/shorts/tCsNNdee0FI?feature=share
+
+<img width="412" alt="image" src="https://github.com/user-attachments/assets/8bf2c039-98f6-49d8-86f7-7cfc7db6bebd">
+<img width="412" alt="image" src="https://github.com/user-attachments/assets/bd51907a-2458-4133-8e84-0d8f841c841d">
+<img width="412" alt="image" src="https://github.com/user-attachments/assets/2fa2cb3b-47c7-43fc-ad82-fd96df79c5cc">
+<img width="415" alt="image" src="https://github.com/user-attachments/assets/6a58f8d4-4494-41a1-a0fa-9f270f81868b">
+
+
+
+
+
