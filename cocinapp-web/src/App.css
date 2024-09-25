@@ -143,6 +143,7 @@ align-items: center;
 .navbar h1{
   font-size: 40px;
   font-weight: bold;
+  font-family: 'Quicksand';
   margin-left: 20pt;
   color: #FFF9F7;
 }
