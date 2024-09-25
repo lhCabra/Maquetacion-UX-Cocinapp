@@ -12,7 +12,8 @@ function Login() {
     navigate("/");
   };
 
-  const handleLoginClick = () => {
+  const handleLoginClick = (event) => {
+    event.preventDefault();
     if (email === "prueba@gmail.com" && password === "prueba") {
       navigate("/estadisticas");
     } else {
@@ -24,7 +25,7 @@ function Login() {
     <div className="App">
       <div className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <form className="formulario">
+        <form className="formulario"  onSubmit={handleLoginClick}>
           <input
             type="email"
             placeholder="Email"
@@ -42,8 +43,8 @@ function Login() {
           {error && (
             <label className="error-label">Credenciales incorrectas</label>
           )}
-          <button className="button" onClick={handleLoginClick}>
-            Iniciar sesion
+          <button className="button" type="submit">
+          Iniciar sesion
           </button>
           <a href="/recuperar-contraseña" className="link-label">
             Olvidaste la contraseña
