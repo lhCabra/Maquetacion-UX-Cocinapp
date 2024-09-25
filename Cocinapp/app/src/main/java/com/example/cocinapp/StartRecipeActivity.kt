@@ -91,7 +91,7 @@ class StartRecipeActivity : AppCompatActivity() {
                     timerText.text = getString(R.string._00_18_00)
                     continueButton.setBackgroundResource(R.drawable.extended_fa)
                 } else if (continueClickCount == 2) {
-                    val intent = Intent(this, MainActivity::class.java)
+                    val intent = Intent(this, EndRecipeActivity::class.java)
                     startActivity(intent)
                 }
             }, 120)

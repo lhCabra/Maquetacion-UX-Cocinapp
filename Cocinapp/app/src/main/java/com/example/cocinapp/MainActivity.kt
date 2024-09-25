@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.ImageView
+import android.widget.RelativeLayout
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
 import com.example.cocinapp.databinding.ActivityMainBinding
@@ -26,6 +27,17 @@ class MainActivity : AppCompatActivity() {
             val intent=Intent(this,InstructionsActivity::class.java)
             icon.setImageResource(R.drawable.play_clicked)
             play.backgroundTintList = ColorStateList.valueOf(ContextCompat.getColor(this,R.color.primary))
+            startActivity(intent)
+        }
+        val iconAdd=findViewById<ImageView>(R.id.icon_add)
+        iconAdd.setOnClickListener {
+            val intent=Intent(this,AddAlarmActivity::class.java)
+            startActivity(intent)
+        }
+
+        val shareBtn=findViewById<RelativeLayout>(R.id.extended_fa)
+        shareBtn.setOnClickListener {
+            val intent=Intent(this,ShareRecipeActivity::class.java)
             startActivity(intent)
         }
     }

@@ -79,4 +79,13 @@
     <string name="continuar">Continuar</string>
     <string name="play_btn">play</string>
     <string name="timer">timer</string>
+    <string name="volver_a_la_receta">volver a la receta</string>
+    <string name="felicidades_has_terminado_la_receta_con_xito_buen_provecho">¡Felicidades! Has terminado la receta con éxito.\n¡Buen provecho!</string>
+    <string name="agregar">Agregar</string>
+    <string name="recuerda_seleccionar_un_nombre_y_descripci_n_clara_para_que_cuando_las_necesites_todo_sea_m_s_f_cil_de_entender_y_utilizar">¡Recuerda seleccionar un nombre y descripción clara para que, cuando las necesites, todo sea más fácil de entender y utilizar!</string>
+    <string name="nombre">Nombre</string>
+    <string name="descripci_n">Descripción</string>
+    <string name="copiar_url">Copiar url</string>
+    <string name="dile_a_tu_amigo_cocinero_que_escanee_el_c_digo_qr_para_a_adir_la_receta">Dile a tu amigo cocinero que escanee el código QR para añadir la receta.</string>
+    <string name="el_nombre_de_la_alarma_no_puede_ser_vac_o">El nombre de la alarma no puede ser vacío</string>
 </resources>

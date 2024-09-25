@@ -13,6 +13,15 @@
         android:theme="@style/Theme.Cocinapp"
         tools:targetApi="31">
         <activity
+            android:name=".ShareRecipeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddAlarmActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EndRecipeActivity"
+            android:exported="false" />
+        <activity
             android:name=".StartRecipeActivity"
             android:exported="false" />
         <activity
