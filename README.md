@@ -40,6 +40,8 @@ Se recomienda utilizar el dispositivo emulado **Pixel 7 API TiramisuPrivacySandb
 ## Evidencias
 https://youtube.com/shorts/tCsNNdee0FI?feature=share
 
+Pantallas Laura Cabra: 
+
 <img width="412" alt="image" src="https://github.com/user-attachments/assets/8bf2c039-98f6-49d8-86f7-7cfc7db6bebd">
 <img width="412" alt="image" src="https://github.com/user-attachments/assets/bd51907a-2458-4133-8e84-0d8f841c841d">
 <img width="412" alt="image" src="https://github.com/user-attachments/assets/2fa2cb3b-47c7-43fc-ad82-fd96df79c5cc">
