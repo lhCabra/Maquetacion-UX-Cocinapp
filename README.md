@@ -59,6 +59,21 @@ Pantallas Laura Cabra:
 <img width="912" alt="image" src="https://github.com/user-attachments/assets/17fb154d-52fd-499a-92fd-e529049ee07c">
 
 Pantallas Daniel Hernández:
+
+Pantallas Daniel Hernández:
+
+|Pantalla|Datos a usar|Resultado esperado|
+|--------|------------|------------------|
+|Inicio|N/A|Funcionamiento normal|
+|Iniciar sesión|Correo: prueba@gmail.com, contraseña: prueba|Inicio de sesion exitoso|
+|Iniciar sesión|Cualquier correo o contraseña diferente al mencionado previamente|Error al iniciar sesión|
+|Registrarme|Contraseñas no coinciden|Error de contraseñas|
+|Registrarme|Correo: prueba@gmail.com|Error de que ya existe una cuenta con ese correo|
+|Registrarme|Cualquier otro correo diferente al previamente mencionado y con contraseñas correctas|Registro exitoso|
+|Recuerar contraseña|Contraseñas no coinciden|Error de contraseñas|
+|Recuperar contraseña|Contraseña temporal diferente a "prueba"|Error de contraseña temporal invalida|
+|Recuperar contraseña|Cualquier correo, contraseña temporal "prueba" y nueva contraseñas coinciden|Nueva contraseña exitosa|
+
 <img width="927" alt="image" src="https://github.com/user-attachments/assets/73fa9718-5836-4151-bc25-fb1f46ecaea0">
 <img width="919" alt="image" src="https://github.com/user-attachments/assets/da3aef3a-ff1c-440c-895b-b4757154035f">
 <img width="922" alt="image" src="https://github.com/user-attachments/assets/a6ed3b5c-fb36-441f-b31f-490dcef48347">
