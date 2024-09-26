@@ -60,8 +60,6 @@ Pantallas Laura Cabra:
 
 Pantallas Daniel Hernández:
 
-Pantallas Daniel Hernández:
-
 |Pantalla|Datos a usar|Resultado esperado|
 |--------|------------|------------------|
 |Inicio|N/A|Funcionamiento normal|
