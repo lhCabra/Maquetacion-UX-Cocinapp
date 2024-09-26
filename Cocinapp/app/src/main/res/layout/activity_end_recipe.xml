@@ -74,14 +74,14 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="52dp"
             android:layout_marginBottom="16dp"
             android:contentDescription="@string/timer"
             android:src="@drawable/chef"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.071" />
+            app:layout_constraintVertical_bias="0.041" />
 
         <RelativeLayout
             android:id="@+id/finish_button"
@@ -89,12 +89,12 @@
             android:layout_height="56dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginBottom="36dp"
+            android:layout_marginBottom="84dp"
             android:background="@drawable/extended_fa"
             android:clipToOutline="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintHorizontal_bias="0.542"
             app:layout_constraintStart_toStartOf="parent">
 
             <ImageView
@@ -133,15 +133,14 @@
             android:id="@+id/textView"
             android:layout_width="350dp"
             android:layout_height="96dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="48dp"
             android:gravity="center_horizontal"
             android:text="@string/felicidades_has_terminado_la_receta_con_xito_buen_provecho"
             android:textSize="22sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.491"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/timer"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toBottomOf="@+id/timer" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
