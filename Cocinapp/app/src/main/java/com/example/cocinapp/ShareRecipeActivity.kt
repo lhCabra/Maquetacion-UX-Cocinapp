@@ -6,6 +6,8 @@ import android.content.Context
 import android.content.Intent
 import android.content.res.ColorStateList
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.widget.ImageView
 import android.widget.RelativeLayout
 import android.widget.TextView
@@ -33,14 +35,16 @@ class ShareRecipeActivity : AppCompatActivity() {
         }
 
         val shareButton: RelativeLayout = findViewById(R.id.continue_button)
-
+        val handler = Handler(Looper.getMainLooper())
         shareButton.setOnClickListener {
+
             shareButton.setBackgroundResource(R.drawable.start_clicked)
+
             val clipboard = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
             val clip = ClipData.newPlainText("Copied URL", "https://urlReceta.com")
             clipboard.setPrimaryClip(clip)
             Toast.makeText(this, "url copiada en portapapeles", Toast.LENGTH_SHORT).show()
-            shareButton.setBackgroundResource(R.drawable.extended_fa)
+            handler.postDelayed({ shareButton.setBackgroundResource(R.drawable.extended_fa) }, 120)
         }
     }
 }

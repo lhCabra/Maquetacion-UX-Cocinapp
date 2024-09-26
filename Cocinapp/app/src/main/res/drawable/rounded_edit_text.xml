@@ -3,9 +3,11 @@
 
     <stroke
         android:width="1dp"
-        android:color="@android:color/black" /> <!-- Cambia el borde a color negro -->
+        android:color="@android:color/black"
+        />
 
-    <corners android:radius="12dp" />
+
+    <corners android:radius="5dp" />
 
     <padding
         android:left="8dp"

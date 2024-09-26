@@ -3,6 +3,10 @@ package com.example.cocinapp
 import android.content.Intent
 import android.content.res.ColorStateList
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
+import android.view.View
+import android.widget.EditText
 import android.widget.ImageView
 import android.widget.RelativeLayout
 import android.widget.TextView
@@ -29,10 +33,27 @@ class AddAlarmActivity : AppCompatActivity() {
         }
 
         val addBtn=findViewById<RelativeLayout>(R.id.continue_button)
+        val errorMsg=findViewById<TextView>(R.id.textView8)
+        val editText = findViewById<EditText>(R.id.editTextText2)
+
         addBtn.setOnClickListener {
+            val inputText = editText.text.toString().trim()
+            val handler = Handler(Looper.getMainLooper())
+
             addBtn.setBackgroundResource(R.drawable.start_clicked)
-            val intent= Intent(this,MainActivity::class.java)
-            startActivity(intent)
-        }
+            handler.postDelayed({
+            if (inputText.isEmpty()) {
+                errorMsg.visibility = View.VISIBLE
+                addBtn.setBackgroundResource(R.drawable.extended_fa)
+
+
+            } else {
+
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+            }
+            }, 120)
+              }
+
     }
 }
