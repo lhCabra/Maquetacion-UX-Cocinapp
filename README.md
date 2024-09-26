@@ -37,8 +37,14 @@ Se recomienda utilizar el dispositivo emulado **Pixel 7 API TiramisuPrivacySandb
 1. Selecciona el dispositivo emulado o conecta un dispositivo físico.
 2. Haz clic en el botón **Run** para compilar y ejecutar la aplicación en el dispositivo seleccionado.
 
+### Ejecutar el apk
+1. Descarga el archivo APK desde la carpeta apk del repositorio.
+2. Transfiere el APK a tu dispositivo Android.
+3. En tu dispositivo, habilita la instalación de aplicaciones de fuentes desconocidas (Ajustes > Seguridad > Fuentes desconocidas).
+4. Usa un explorador de archivos en tu dispositivo para navegar hasta el APK transferido y selecciona Instalar.
+
 ## Evidencias
-[https://youtube.com/shorts/tCsNNdee0FI?feature=share](https://youtu.be/Y3SXm-3B_Ak)
+[[https://youtube.com/shorts/tCsNNdee0FI?feature=share](https://youtu.be/Y3SXm-3B_Ak)](https://youtu.be/5B3izU7U-1A)
 
 Pantallas Laura Cabra: 
 
@@ -49,9 +55,14 @@ Pantallas Laura Cabra:
 
 Pantallas Daniel Hernández
 
-<img width="412" alt="image" src="https://github.com/user-attachments/assets/719a1b83-c9e9-485a-89f4-512a67c7e248">
-<img width="412" alt="image" src="https://github.com/user-attachments/assets/7511a537-2919-4b90-9f5d-ccd0da710143">
-<img width="412" alt="image" src="https://github.com/user-attachments/assets/964fdb08-6acf-4c19-bb97-bbcb0771610c">
+<img width="412" alt="image" src="https://github.com/user-attachments/assets/ba70d47f-06a7-429e-933d-1ea042bd1275">
+
+<img width="412" alt="image" src="https://github.com/user-attachments/assets/f0ee12ab-12ae-4cba-9f5c-8ceee05f88f3">
+
+<img width="412" alt="image" src="https://github.com/user-attachments/assets/384ef341-e785-48ce-a4e8-23450906ae82">
+<img width="412" alt="image" src="https://github.com/user-attachments/assets/46bd2382-007f-4c80-ab69-68a80cefcdab">
+
+
 
 
 
