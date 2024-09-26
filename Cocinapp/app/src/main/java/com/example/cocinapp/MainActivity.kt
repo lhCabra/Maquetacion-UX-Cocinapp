@@ -3,6 +3,8 @@ package com.example.cocinapp
 import android.content.Intent
 import android.content.res.ColorStateList
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
@@ -36,7 +38,13 @@ class MainActivity : AppCompatActivity() {
         }
 
         val shareBtn=findViewById<RelativeLayout>(R.id.extended_fa)
+
+        val handler = Handler(Looper.getMainLooper())
         shareBtn.setOnClickListener {
+
+            handler.postDelayed({
+                shareBtn.setBackgroundResource(R.drawable.start_clicked)
+            }, 120)
             val intent=Intent(this,ShareRecipeActivity::class.java)
             startActivity(intent)
         }
