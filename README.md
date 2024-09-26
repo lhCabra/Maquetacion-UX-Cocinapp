@@ -49,9 +49,9 @@ Pantallas Laura Cabra:
 
 Pantallas Daniel Hernández
 
-<img width="297" alt="image" src="https://github.com/user-attachments/assets/719a1b83-c9e9-485a-89f4-512a67c7e248">
-<img width="285" alt="image" src="https://github.com/user-attachments/assets/7511a537-2919-4b90-9f5d-ccd0da710143">
-<img width="328" alt="image" src="https://github.com/user-attachments/assets/964fdb08-6acf-4c19-bb97-bbcb0771610c">
+<img width="412" alt="image" src="https://github.com/user-attachments/assets/719a1b83-c9e9-485a-89f4-512a67c7e248">
+<img width="412" alt="image" src="https://github.com/user-attachments/assets/7511a537-2919-4b90-9f5d-ccd0da710143">
+<img width="412" alt="image" src="https://github.com/user-attachments/assets/964fdb08-6acf-4c19-bb97-bbcb0771610c">
 
 
 
