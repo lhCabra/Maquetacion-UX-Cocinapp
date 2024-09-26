@@ -242,6 +242,10 @@ align-items: center;
   border-color: black !important; 
   box-shadow: none !important; 
 }
+.input:focus ,
+.input:active{
+  box-shadow: none !important; 
+}
 .create-form{
   margin-top: 50px;
 }
@@ -263,7 +267,7 @@ align-items: center;
   border-style: solid;
 }
 input{
-
+  outline: none; 
   background-color: #FFF9F7 !important;
   height: 50px;
 }
