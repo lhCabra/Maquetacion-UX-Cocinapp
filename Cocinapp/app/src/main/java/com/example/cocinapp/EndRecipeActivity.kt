@@ -18,6 +18,7 @@ class EndRecipeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_end_recipe)
         val finishBtn=findViewById<RelativeLayout>(R.id.finish_button)
         finishBtn.setOnClickListener {
+            finishBtn.setBackgroundResource(R.drawable.start_clicked)
             val intent= Intent(this,MainActivity::class.java)
             startActivity(intent)
         }
